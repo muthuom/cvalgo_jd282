@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "muthuom-cvalgo_jd282"
+version = "0.1.0"
+description = "按给定权重把总额度分配到各项，报告超分配项与利用率"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "muthuom" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://muthuom.github.io"
+Repository = "https://github.com/muthuom/cvalgo_jd282"
+Issues = "https://github.com/muthuom/cvalgo_jd282/issues"
+
+[project.scripts]
+cvalgo_jd282 = "cvalgo_jd282:main"
+
+[tool.setuptools]
+py-modules = ["cvalgo_jd282"]
